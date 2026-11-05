@@ -29,6 +29,12 @@ const TARGET_URL = "deepseek://"  // 点击组件后打开的目标
 - 风格切换：把 `STYLE_MODE` 改为 `"minimal"` 即可换到极简居中版
 - 打开目标：若你的设备没有注册 `deepseek://` 这个 Scheme（例如只装了网页版），把 `TARGET_URL` 改为 `https://chat.deepseek.com/`
 
+## 说明 / 免责声明
+
+本小组件**不调用 DeepSeek 的任何 API**。它只是通过 URL Scheme（或网页链接）把用户引导到 DeepSeek 的官方 App / 网页，组件本身与 DeepSeek 后台没有数据交互。
+
+由于 DeepSeek 目前**没有开放的公开接口**可供小组件独立调用，因此组件 UI 上出现的元素（例如卡片风里的图标、按钮样式等）**仅用于视觉美观，并不代表组件具备对应的实际功能**——点击组件只会拉起 DeepSeek，而不会在组件内直接发起对话、拍照或语音输入。
+
 ## 许可证
 
 [MIT](LICENSE) © Yuxuanshi0129
